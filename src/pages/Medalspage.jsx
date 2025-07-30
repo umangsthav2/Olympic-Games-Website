@@ -30,12 +30,8 @@ const Medalspage = () => {
                     Medal Table: Celebrating Global Excellence
                 </h2>
                 <Table
-                    columns_no={4}
-                    rows_no={10}
-
-                    column_data={['#', 'Country', 'Total', 'Gold', 'Silver', 'Bronze',]}
-
-                    row_data={
+                  column_data={['#', 'Country', 'Total', 'Gold', 'Silver', 'Bronze',]}
+                  row_data={
                         [
                             ['USA', 113, 39, 41, 33],
                             ['China', 24, 8, 6, 10],

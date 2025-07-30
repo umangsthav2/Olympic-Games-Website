@@ -22,12 +22,13 @@ const Navbar = () => {
                                 Sports
                             </Link>
                             <ul className="dropdown-menu">
-                                <li><Link className="dropdown-item" to="#">Swimming</Link></li>
-                                <li><Link className="dropdown-item" to="#">Gymnastics</Link></li>
-                                <li><Link className="dropdown-item" to="#">Cycling</Link></li>
-                                <li><Link className="dropdown-item" to="#">Basketball</Link></li>
+                                <li><Link className="dropdown-item" to="/sports/football">Football</Link></li>
+                                <li><Link className="dropdown-item" to="/sports/swimming">Swimming</Link></li>
+                                <li><Link className="dropdown-item" to="/sports/gymnastics">Gymnastics</Link></li>
+                                <li><Link className="dropdown-item" to="/sports/cycling">Cycling</Link></li>
+                                <li><Link className="dropdown-item" to="/sports/basketball">Basketball</Link></li>
                                 <li><hr className="dropdown-divider" /></li>
-                                <li><Link className="dropdown-item" to="#">View More...</Link></li>
+                                <li><Link className="dropdown-item" to="/sports">View More...</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item">
@@ -37,10 +38,10 @@ const Navbar = () => {
                             <Link className="nav-link" to="/user">User</Link>
                         </li>
                     </ul>
-                    <div className="d-flex" role="search">
-                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <form action='./search' method="GET" className="d-flex" role="search">
+                        <input name="q" className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                         <button className="btn btn-outline-success" type="submit">Search</button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </nav>
