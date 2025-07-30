@@ -11,18 +11,31 @@ import news_image_05 from '../assets/images/sportmanship.jpeg'
 
 
 
-export default function NewsCarousel() {
+export default function Carousel(props) {
+
+
+    let array = [1, 2, 3, 4];
+
+
+
+
     return (
         <>
+
+
             <div id="carouselExampleCaptions" className="carousel slide p-2" data-bs-ride="carousel">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1" />
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 2" />
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 3" />
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 4" />
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 5" />
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 6" />
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 7" />
+
+                    {
+                        // array.map(() => (<></>))
+                    }
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2" />
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3" />
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4" />
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-current="true" aria-label="Slide 5" />
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-current="true" aria-label="Slide 6" />
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-current="true" aria-label="Slide 7" />
                 </div>
                 <div className="carousel-inner">
 
