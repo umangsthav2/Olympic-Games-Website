@@ -1,4 +1,9 @@
 import aryanvideo from '../../assets/videos/aryan.mp4'
+import best_2024 from '../../assets/videos/Best of Olympic Games Paris 2024 [vy6FivZHRjQ].webm'
+
+
+
+
 import Card from '../../components/Card';
 import NewsCarousel from '../../components/NewsCarousel';
 
@@ -20,7 +25,7 @@ const Homepage = () => {
                     </h1>
                 </div>
                 <video autoPlay muted loop className='w-100'>
-                    <source src={aryanvideo} type="video/mp4" />
+                    <source src={best_2024} type="video/mp4" />
                 </video>
 
 

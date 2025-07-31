@@ -1,29 +1,35 @@
 import { Link } from "react-router-dom";
 
 const Userlogin = () => {
+
+    const formValidate = () => {
+        // alert("Validate Function");
+        alert("Validate Function for Login");
+    }
+
     return (
         <>
             <div className="h-100 d-flex flex-column align-items-center form-container">
-                <form className="needs-validation p-5 w-75" novalidate>
+                <form onSubmit={formValidate} className="needs-validation p-5 w-75" noValidate>
                     <h1 className="text-center">LOGIN</h1>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                        <div class="valid-feedback">
+                    <div className="mb-3">
+                        <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
+                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                        <div className="valid-feedback">
                             Looks good!
                         </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" />
+                    <div className="mb-3">
+                        <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
+                        <input type="password" className="form-control" id="exampleInputPassword1" />
                     </div>
-                    <div class="mb-3 form-check form-control-lg">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                        <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                    <div className="mb-3 form-check form-control-lg">
+                        <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                        <label className="form-check-label" htmlFor="exampleCheck1">Remember Me</label>
                     </div>
-                    <button type="submit" class=" w-100 btn btn-success">Login</button>
+                    <button type="submit" className=" w-100 btn btn-success">Login</button>
                     <hr />
-                    <Link to="/user/signup" class=" w-100 btn btn-primary">Register</Link>
+                    <Link to="/user/signup" className=" w-100 btn btn-primary">Register</Link>
                 </form>
             </div>
         </>
