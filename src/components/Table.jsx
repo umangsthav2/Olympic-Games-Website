@@ -5,7 +5,6 @@ export default function Table(props) {
             <table className="table">
                 <thead>
                     <tr>
-
                         {props.column_data &&
                             props.column_data.map(
 
@@ -16,7 +15,7 @@ export default function Table(props) {
                             )
                         }
                     </tr>
-                    {  props.row_data &&
+                    {props.row_data &&
                         props.row_data.map(
 
                             (row_data) => {

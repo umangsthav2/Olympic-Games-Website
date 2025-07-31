@@ -8,6 +8,7 @@ import Medalspage from './pages/Root/Medalspage';
 import Footer from './components/Footer';
 import Footballpage from './pages/Sports/Footballpage';
 import Sportspage from './pages/Root/Sportspage';
+import Schedulepage from './pages/Root/Schedulepage';
 
 
 
@@ -21,7 +22,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Homepage />} />
           <Route path='/medals' element={<Medalspage />} />
-          <Route path='/schedule' element={<Medalspage />} />
+          <Route path='/schedule' element={<Schedulepage />} />
 
 
 
@@ -29,7 +30,7 @@ const App = () => {
           <Route path='/sports' element={<Sportspage />} />
         </Routes>
       </div>
-    <Footer/>
+      <Footer />
     </BrowserRouter>
   );
 }
