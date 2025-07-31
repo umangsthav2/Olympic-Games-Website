@@ -1,12 +1,12 @@
-import aryanvideo from '../assets/videos/aryan.mp4'
-import Card from '../components/Card';
-import NewsCarousel from '../components/NewsCarousel';
+import aryanvideo from '../../assets/videos/aryan.mp4'
+import Card from '../../components/Card';
+import NewsCarousel from '../../components/NewsCarousel';
 
 
 
-import swimming_image from '../assets/images/Michael Phelps1.jpeg'
-import gymnastic_image from '../assets/images/gymnastic.jpeg'
-import tandf_image from '../assets/images/track and field.jpeg'
+import swimming_image from '../../assets/images/Michael Phelps1.jpeg'
+import gymnastic_image from '../../assets/images/gymnastic.jpeg'
+import tandf_image from '../../assets/images/track and field.jpeg'
 
 
 

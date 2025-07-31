@@ -1,5 +1,5 @@
-import football_image from '../assets/images/football1.jpeg';
-import Table from '../components/Table';
+import football_image from '../../assets/images/football1.jpeg';
+import Table from '../../components/Table';
 
 export default function Footballpage() {
     return (
@@ -24,7 +24,7 @@ export default function Footballpage() {
 
             <div className="section2">
                 <h1>History of Football</h1>
-                <iframe width="1280" height="720" src="https://www.youtube.com/embed/yyMx7SU6GLg" title="The Entire History Of Football" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe className='w-100' height="720" src="https://www.youtube.com/embed/yyMx7SU6GLg" title="The Entire History Of Football" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 <div className="para p-5">
                     <p>
                         Football, known as soccer in some countries, is a globally beloved sport characterized by its simplicity and universality. Played by millions of people worldwide, it transcends cultural and social boundaries, uniting fans and players alike.
@@ -38,7 +38,7 @@ export default function Footballpage() {
 
             <div className="section3">
                 <h1>Medals</h1>
-                <iframe width="1280" height="720" src="https://www.youtube.com/embed/7cM4ljysAzM" title="All Olympics Football Gold Medal Winners 1900 - 2020." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe className='w-100' height="720" src="https://www.youtube.com/embed/7cM4ljysAzM" title="All Olympics Football Gold Medal Winners 1900 - 2020." frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 <p>
                     The Olympic football tournament awards gold, silver, and bronze medals to the top three teams in both the men's and women's competitions. Countries like Brazil, Hungary, and Argentina have historically dominated the men's tournament, showcasing their footballing prowess on the Olympic stage.
                 </p>
