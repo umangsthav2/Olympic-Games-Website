@@ -10,6 +10,9 @@ import Footballpage from './pages/Sports/Footballpage';
 import Sportspage from './pages/Root/Sportspage';
 import Schedulepage from './pages/Root/Schedulepage';
 
+import User from './pages/User/User';
+import Userlogin from './pages/User/Login';
+import Usersignup from './pages/User/Signup';
 
 
 const App = () => {
@@ -28,6 +31,12 @@ const App = () => {
 
           <Route path='/sports/football' element={<Footballpage />} />
           <Route path='/sports' element={<Sportspage />} />
+          
+          
+          
+          <Route path='/user' element={<User />} />
+          <Route path='/user/login' element={<Userlogin />} />
+          <Route path='/user/signup' element={<Usersignup/>} />
         </Routes>
       </div>
       <Footer />
