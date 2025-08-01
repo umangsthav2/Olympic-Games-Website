@@ -49,20 +49,13 @@ const Usersignup = () => {
         }
         else {
             setLnameClass(" is-valid");
-            setLnameErrMsg("Nice Name");
+            setLnameErrMsg("Looks Good");
         }
     }
-
-
-
-
 
     const formValidate = () => {
         alert("Validate Function for Register");
     }
-
-
-
     return (
         <div className="formcontainer p-5 d-flex justify-content-center" >
             <form onSubmit={formValidate} className="row g-3 d-flex align-items-center w-75" noValidate>
@@ -99,8 +92,6 @@ const Usersignup = () => {
                     <div id="validationServerUsernameFeedback" className="invalid-feedback">Please choose a username.</div>
                     <div className="valid-feedback">Looks good!</div>
                 </div>
-
-
 
                 <div className="col-12">
                     <div className="form-check">

@@ -24,12 +24,6 @@ const Userlogin = () => {
         // alert("Validate Function");
         alert("Validate Function for Login");
     }
-
-
-
-    useEffect(() => { console.log("State changed") }, []);
-
-
     return (
         <>
             <div className="h-100 d-flex flex-column align-items-center form-container">
