@@ -1,11 +1,34 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Userlogin = () => {
+
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+
+
+    const handleUsername = (e) => {
+        setUsername(e.target.value);
+        console.log(username);
+    }
+
+    const userValidate = () => {
+            console.log(username.match(/\d/g));
+    
+    }
+
+
+
 
     const formValidate = () => {
         // alert("Validate Function");
         alert("Validate Function for Login");
     }
+
+
+
+    useEffect(() => { console.log("State changed") }, []);
+
 
     return (
         <>
@@ -14,7 +37,7 @@ const Userlogin = () => {
                     <h1 className="text-center">LOGIN</h1>
                     <div className="mb-3">
                         <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
-                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                        <input onChange={handleUsername} onBlur={userValidate} type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                         <div className="valid-feedback">
                             Looks good!
                         </div>

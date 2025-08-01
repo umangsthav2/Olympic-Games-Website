@@ -25,7 +25,7 @@ export default function NewsCarousel() {
                 </div>
                 <div className="carousel-inner">
 
-                    <Link to="/news/1">
+                    <Link to="/news/post/1">
                         <div className=" carousel-item active" data-bs-interval="3000">
                             <img src={news_image_01} className="d-block w-100" alt="..." />
                             <div className="text-light carousel-caption bg-dark">
@@ -35,7 +35,7 @@ export default function NewsCarousel() {
                         </div>
                     </Link>
 
-                    <Link to="/news/2">
+                    <Link to="/news/post/2">
                         <div className=" carousel-item" data-bs-interval="3000">
                             <img src={news_image_02} className="d-block w-100" alt="..." />
                             <div className="text-light carousel-caption bg-dark">
@@ -45,7 +45,7 @@ export default function NewsCarousel() {
                         </div>
                     </Link>
 
-                    <Link to="/news/3">
+                    <Link to="/news/post/3">
                         <div className=" carousel-item" data-bs-interval="3000">
                             <img src={news_image_03} className="d-block w-100" alt="..." />
                             <div className="text-light carousel-caption bg-dark">
@@ -55,7 +55,7 @@ export default function NewsCarousel() {
                         </div>
                     </Link>
 
-                    <Link to="/news/4">
+                    <Link to="/news/post/4">
                         <div className=" carousel-item" data-bs-interval="3000">
                             <img src={news_image_04} className="d-block w-100" alt="..." />
                             <div className="text-light carousel-caption bg-dark">
@@ -65,7 +65,7 @@ export default function NewsCarousel() {
                         </div>
                     </Link>
 
-                    <Link to="/news/5">
+                    <Link to="/news/post/5">
                         <div className=" carousel-item" data-bs-interval="3000">
                             <img src={news_image_05} className="d-block w-100" alt="..." />
                             <div className="text-light carousel-caption bg-dark">
